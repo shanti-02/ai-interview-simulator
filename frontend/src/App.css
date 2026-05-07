@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #eef2ff, #f8fafc);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.interview-container {
+  width: 85%;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.main-title {
+  font-size: 42px;
+  color: #111827;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.role-box,
+.question-box,
+.answer-box,
+.feedback-box {
+  margin-top: 25px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.role-box:hover,
+.question-box:hover,
+.answer-box:hover,
+.feedback-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 20px rgba(37, 99, 235, 0.08);
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0px 0px 0px 4px rgba(37, 99, 235, 0.15);
+}
+
+button {
+  margin-top: 15px;
+  margin-right: 12px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #1d4ed8, #1e40af);
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.question-box p {
+  font-size: 21px;
+  line-height: 1.8;
+  color: #111827;
+}
+
+.answer-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.feedback-box {
+  background: #f8fafc;
+  line-height: 1.9;
+}
+
+.feedback-box h2 {
+  color: #111827;
+}
+
+.feedback-box ul {
+  padding-left: 25px;
+}
+
+.feedback-box li {
+  margin-bottom: 10px;
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: bold;
+  text-align: center;
+}
