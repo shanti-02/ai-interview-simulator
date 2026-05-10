@@ -6,7 +6,7 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 
 function Interview() {
-  const [role, setRole] = useState("Frontend Developer");
+  const [role, setRole] = useState("");
   const [feedback, setFeedback] = useState("");
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
