@@ -26,7 +26,7 @@ function Interview() {
     setQuestion("");
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/question", {
+      const res = await fetch("https://ai-interview-simulator-40q0.onrender.com/api/question", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function Interview() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/analyze", {
+      const res = await fetch("https://ai-interview-simulator-40q0.onrender.com/api/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
